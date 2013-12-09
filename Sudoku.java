@@ -1,9 +1,8 @@
-
 /*@
 
 /*** VERIFAST'S BUILT-IN DATATYPES, FIXPOINTS and LEMMAS ***/
 
-/*inductive list<t> = nil | cons(t, list<t>); 
+inductive list<t> = nil | cons(t, list<t>); 
  
 fixpoint int length<t>(list<t> xs) { 
   switch (xs) { 
@@ -17,7 +16,7 @@ fixpoint t nth<t>(int n, list<t> xs) {
     case nil: return default_value<t>; 
     case cons(x, xs0): return n == 0 ? x : nth(n - 1, xs0); 
   } 
-}*/
+}
 
 fixpoint boolean forall_int(fixpoint(int, boolean) p);
 
